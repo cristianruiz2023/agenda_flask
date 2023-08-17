@@ -1,0 +1,8 @@
+CREATE DATABASE IF NOT EXISTS app_flask;
+USE app_flask_;
+CREATE TABLE contact (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    fullname VARCHAR(50) NOT NULL,
+    phone VARCHAR(50) NOT NULL,
+    email VARCHAR(255) UNIQUE
+);
