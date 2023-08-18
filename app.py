@@ -5,8 +5,8 @@ app = Flask(__name__)
 
 #mysql conections
 app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'cris'
-app.config['MYSQL_PASSWORD'] = ''
+app.config['MYSQL_USER'] = '*******'
+app.config['MYSQL_PASSWORD'] = '****'
 app.config['MYSQL_DB'] = 'app_flask'
 mysql = MySQL(app)
 
@@ -43,4 +43,4 @@ def delete_contact():
 
 
 if __name__ == '__main__':
-    app.run(port=8080, debug=True)
+    app.run(port='****', debug=True)
